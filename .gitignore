@@ -1,0 +1,60 @@
+
+# Build outputs
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa]rtifacts/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio extensions
+_ReSharper*/
+*.DotSettings.user
+
+# User-specific settings
+*.rsuser
+*.sln.ide
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+
+# Logs
+*.log
+
+# Local databases
+*.mdf
+*.ldf
+*.sqlite
+*.db
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+secrets.json
+appsettings.Development.json
+
+# Certificates and private keys
+*.pfx
+*.p12
+*.key
+*.pem
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Test results
+TestResults/
+*.trx
