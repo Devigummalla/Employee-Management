@@ -1,0 +1,27 @@
+﻿
+@model EmployeeManagement.Models.Employee
+
+@{
+    ViewData["Title"] = "Employee Dashboard";
+}
+
+<div class="container mt-4">
+    <h2>Employee Dashboard</h2>
+    <p>Welcome, @Model.FullName!</p>
+
+    <div class="card mt-4">
+        <div class="card-header">
+            <h4>My Profile</h4>
+        </div>
+
+        <div class="card-body">
+            <p><strong>Employee ID:</strong> @Model.EmployeeId</p>
+            <p><strong>Name:</strong> @Model.FullName</p>
+            <p><strong>Email:</strong> @Model.Email</p>
+            <p><strong>Department:</strong> @(Model.Department ?? "Not assigned")</p>
+            <p><strong>Designation:</strong> @(Model.Designation ?? "Not assigned")</p>
+            <p><strong>Joining Date:</strong> @(Model.JoiningDate?.ToString("dd MMM yyyy") ?? "Not assigned")</p>
+            <p><strong>Status:</strong> @(Model.IsActive ? "Active" : "Inactive")</p>
+        </div>
+    </div>
+</div>
